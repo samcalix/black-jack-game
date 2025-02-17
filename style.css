@@ -1,5 +1,5 @@
-
-body{
+/* Base Styles */
+body {
     text-align: center;
     background-image: url(/Image/Untitled-1.png);
     background-repeat: no-repeat;
@@ -9,46 +9,88 @@ body{
     font-family: "Roboto Mono", serif;
     font-weight: bold;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
-.container{
+/* Container */
+.container {
     background-color: darkmagenta;
     background-size: cover;
-    padding-bottom: 10px;
-    padding-top: 1px;
+    padding: 1vh 5vw; /* Responsive padding */
+    border-radius: 5px;
+    max-width: 90%;
+    margin: auto;
 }
 
-h3{
+/* Headings */
+h1 {
+    color: gold;
+    font-size: 2.5rem; /* Responsive font size */
+}
+
+h3 {
     font-style: italic;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
-h1{
-    color: gold;
-}
-
-button{
-    padding-top: 10px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 10px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+/* Buttons */
+button {
+    padding: 10px 35px;
+    margin: 5px;
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     color: darkmagenta;
-    font-size: medium;
+    font-size: 1rem;
     font-weight: bold;
     background-color: gold;
+    cursor: pointer;
 }
 
-.restart-btn{
+.restart-btn {
     background-color: red;
     color: white;
 }
 
-a{
+/* Links */
+a {
     text-decoration: none;
     color: white;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust for tablets */
+    h1 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 8px 25px;
+    }
+    .container {
+        padding: 2vh 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust for mobile phones */
+    h1 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 0.9rem;
+    }
+    button {
+        font-size: 0.85rem;
+        padding: 7px 20px;
+    }
+    .container {
+        padding: 3vh 4vw;
+        max-width: 95%;
+    }
+}
