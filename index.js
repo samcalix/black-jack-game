@@ -68,7 +68,7 @@ function newCard(){
 }
 
 function restart(){
-    if (hasBlackjack === true || isAlive ===false){
+    if (hasBlackjack || !isAlive){
     isAlive = false
     hasBlackjack = false
     gamestarted = false
