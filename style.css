@@ -17,35 +17,47 @@ body {
 .container {
     background-color: darkmagenta;
     background-size: cover;
-    padding: 1vh 5vw; /* Responsive padding */
+    padding: 1vh 5vw; /* Reduced top padding */
     border-radius: 5px;
     max-width: 90%;
     margin: auto;
 }
 
-/* Headings */
+/* Headings & Paragraphs */
 h1 {
     color: gold;
-    font-size: 2.5rem; /* Responsive font size */
+    font-size: 3rem;
+    margin-top: 5px; /* Less top margin */
 }
 
 h3 {
     font-style: italic;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.8;
 }
 
 /* Buttons */
 button {
-    padding: 10px 35px;
-    margin: 5px;
+    padding: 14px 40px; /* Reduced top padding */
+    margin: 6px; /* Adjusted spacing */
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     color: darkmagenta;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     background-color: gold;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover */
+button:hover {
+    transform: scale(1.05);
 }
 
 .restart-btn {
@@ -63,34 +75,42 @@ a {
 @media (max-width: 768px) {
     /* Adjust for tablets */
     h1 {
-        font-size: 2rem;
+        font-size: 3.2rem;
     }
     h3 {
-        font-size: 1rem;
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1.5rem;
     }
     button {
-        font-size: 0.9rem;
-        padding: 8px 25px;
+        font-size: 1.5rem;
+        padding: 16px 45px;
     }
     .container {
-        padding: 2vh 5vw;
+        padding: 1.5vh 6vw;
     }
 }
 
 @media (max-width: 480px) {
     /* Adjust for mobile phones */
     h1 {
-        font-size: 1.8rem;
+        font-size: 3.5rem;
     }
     h3 {
-        font-size: 0.9rem;
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.6rem;
+        line-height: 1.9;
     }
     button {
-        font-size: 0.85rem;
-        padding: 7px 20px;
+        font-size: 1.6rem;
+        padding: 18px 50px;
+        border-radius: 10px;
     }
     .container {
-        padding: 3vh 4vw;
+        padding: 2vh 5vw; /* Less top padding */
         max-width: 95%;
     }
 }
