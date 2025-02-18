@@ -17,38 +17,40 @@ body {
 .container {
     background-color: darkmagenta;
     background-size: cover;
-    padding: 1vh 5vw; /* Reduced top padding */
+    padding: 0.5vh 4vw; /* Reduced padding */
     border-radius: 5px;
-    max-width: 90%;
+    max-width: 92%;
     margin: auto;
 }
 
 /* Headings & Paragraphs */
 h1 {
     color: gold;
-    font-size: 3rem;
-    margin-top: 5px; /* Less top margin */
+    font-size: 2.8rem; /* Slightly smaller */
+    margin: 5px 0;
 }
 
 h3 {
     font-style: italic;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin: 3px 0;
 }
 
 p {
-    font-size: 1.3rem;
-    line-height: 1.8;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 3px 0;
 }
 
 /* Buttons */
 button {
-    padding: 14px 40px; /* Reduced top padding */
-    margin: 6px; /* Adjusted spacing */
+    padding: 12px 30px; /* Smaller for better fit */
+    margin: 4px;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     color: darkmagenta;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     background-color: gold;
     cursor: pointer;
@@ -57,7 +59,7 @@ button {
 
 /* Button Hover */
 button:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .restart-btn {
@@ -75,6 +77,26 @@ a {
 @media (max-width: 768px) {
     /* Adjust for tablets */
     h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    button {
+        font-size: 1.4rem;
+        padding: 14px 35px;
+    }
+    .container {
+        padding: 1vh 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust for mobile phones */
+    h1 {
         font-size: 3.2rem;
     }
     h3 {
@@ -82,35 +104,15 @@ a {
     }
     p {
         font-size: 1.5rem;
+        line-height: 1.6;
     }
     button {
         font-size: 1.5rem;
-        padding: 16px 45px;
+        padding: 15px 40px;
+        border-radius: 8px;
     }
     .container {
-        padding: 1.5vh 6vw;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Adjust for mobile phones */
-    h1 {
-        font-size: 3.5rem;
-    }
-    h3 {
-        font-size: 2rem;
-    }
-    p {
-        font-size: 1.6rem;
-        line-height: 1.9;
-    }
-    button {
-        font-size: 1.6rem;
-        padding: 18px 50px;
-        border-radius: 10px;
-    }
-    .container {
-        padding: 2vh 5vw; /* Less top padding */
+        padding: 1.5vh 4vw; /* More compact */
         max-width: 95%;
     }
 }
